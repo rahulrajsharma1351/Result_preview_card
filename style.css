@@ -1,0 +1,223 @@
+@import url('https://fonts.googleapis.com/css2?family=Hanken+Grotesk:ital,wght@0,100..900;1,100..900&display=swap');
+
+:root {
+    --Light-red: hsl(0, 100%, 67%);
+    --Orangey-yellow: hsl(39, 100%, 56%);
+    --Green-teal: hsl(166, 100%, 37%);
+    --Cobalt-blue: hsl(234, 85%, 45%);
+
+    --Light-slate-blue: hsl(252, 89%, 59%);
+    --Light-royal-blue: hsl(241, 81%, 54%);
+
+    --Violet-blue: hsla(256, 72%, 46%, 1);
+    --Persian-blue: hsla(241, 72%, 46%, 0);
+
+    --White: hsl(0, 0%, 100%);
+    --Pale-blue: hsl(221, 100%, 96%);
+    --Light-lavender: hsl(241, 100%, 89%);
+    --Dark-gray-blue: hsl(224, 30%, 27%);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Hanken Grotesk", sans-serif;
+}
+
+body {
+    background-color: var(--White);
+    height: calc(100vh - 1px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.cont {
+    display: flex;
+    border-radius: 30px;
+    width: 45vw;
+    box-shadow: 10px 60px 80px 0px hsla(241, 100%, 89%, 0.53);
+}
+
+.box1 {
+    background: linear-gradient(var(--Light-slate-blue) 30%, var(--Light-royal-blue) 78%);
+    height: 60vh;
+    width: 50%;
+    border-radius: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.box1 h1 {
+    text-align: center;
+    margin: 30px 0;
+    font-size: 24px;
+    font-weight: 700;
+    color: var(--Light-lavender);
+}
+
+.box1 h2 {
+    color: var(--White);
+    font-size: 30px;
+    margin: 15px;
+}
+
+.box1 p {
+    color: var(--Light-lavender);
+    padding: 0 55px;
+    text-align: center;
+    font-size: 16px;
+    font-weight: 500;
+}
+.circle {
+    background: linear-gradient(var(--Violet-blue) 2%, var(--Persian-blue) 95%);
+    height: 41%;
+    width: 53%;
+    border-radius: 63%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.circle h2 {
+    color: var(--White);
+    font-size: 58px;
+    margin: 0px;
+}
+
+.box2 {
+    border-radius: 30px;
+    background-color: rgba(0, 0, 0, 0);
+    height: 60vh;
+    width: 50%;
+}
+
+.box2 h1 {
+    color: black;
+    margin: 30px;
+    font-size: 24px;
+    font-weight: 700;
+}
+
+.itm {
+    display: flex;
+    justify-content: space-between;
+    border-radius: 9px;
+    padding: 12px;
+    margin: 15px 30px;
+    font-size: 18px;
+    font-weight: 700;
+}
+
+.item1 {
+    background-color: hsla(0, 100%, 67%, 0.092);
+    color: var(--Light-red);
+}
+
+.item2 {
+    color: var(--Orangey-yellow);
+    background-color: hsl(39, 100%, 56%, 0.092);
+}
+
+.item3 {
+    color: var(--Green-teal);
+    background-color: hsl(166, 100%, 37%, 0.092);
+}
+
+.item4 {
+    color: var(--Cobalt-blue);
+    background-color: hsl(234, 85%, 45%, 0.092);
+}
+
+.box2 button {
+    font-weight: 700;
+    font-size: 20px;
+    background-color: var(--Dark-gray-blue);
+    padding: 12px 85px;
+    border-radius: 45px;
+    text-align: center;
+    margin: 5px 53px;
+    border: none;
+    color: var(--White);
+}
+
+.itm :nth-child(3) {
+    color: rgba(128, 128, 128, 0.658);
+}
+
+.itm b {
+    color: black;
+    font-weight: 700;
+}
+
+.attribution {
+    font-size: 16px;
+    margin-top: 50px;
+    text-align: center;
+}
+
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}
+@media screen and (max-width :1350px) {
+    .box2 button {
+        font-size: 15px;
+        padding: 10px 65px;
+    }
+}
+@media screen and (max-width :1100px) {
+    .cont {
+        border-radius: 0px;
+        width: 55vw;
+    }
+}
+@media  screen and (max-width:850px) {
+    .cont {
+        width: 80vw;
+    }
+}
+@media  screen and (max-width:450px) {
+    body{
+        height: calc(128vh - 1px);
+    }
+    .cont {
+        display: inline;
+        width: 100%;
+    }
+    .box1{
+        width: 100%;
+    }
+    .box2{
+        width: 100%;
+    }
+    .box2 button{
+        margin: 24px 66px;
+        font-size: 24px;
+        padding: 20px 95px;
+    }
+    .attribution {
+        font-size: 14px;
+    }
+}
+@media  screen and (max-width:380px) {
+    .box2 button{
+        margin: 25px 50px;
+        font-size: 24px;
+        padding: 15px 95px;
+    }
+    .attribution {
+        font-size: 13px;
+    }
+}
+@media  screen and (max-width:380px) {
+    .box2 button{
+        margin: 25px 20px;
+    }
+    .attribution {
+        font-size: 12px;
+    }
+}
